@@ -7,8 +7,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          echo "npm install"
-          echo "npm run lint"
+          npm install
+          npm run lint
   publish:
     needs: lint
     name: publish
